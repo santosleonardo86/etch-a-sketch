@@ -26,14 +26,14 @@ function etch() {
 
         normal.addEventListener('click', () => {
           div.addEventListener('mouseover', () => {
-            for (let i = 0; i < 10; i++)
-              div.style.background = '#000';
+            div.style.background = '#000';
           })
         })
 
         rainbow.addEventListener('click', () => {
           div.addEventListener('mouseover', () => {
             div.style.background = `rgb(${randomRgbColor()})`
+            return false;
           })
         })
 
